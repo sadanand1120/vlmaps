@@ -16,7 +16,7 @@ matplotlib==3.6.2
 test-tube==0.7.5
 wandb==0.13.7
 h5py==3.7.0
-cmake
+#cmake
 # gym==0.22.0
 open3d==0.16.0
 grad-cam==1.4.6

@@ -1,6 +1,8 @@
 #!/bin/bash
 pip install -r requirements.txt
 
+pip3 uninstall cmake && conda install cmake=3.14.0
+
 conda install habitat-sim=0.2.2 -c conda-forge -c aihabitat -y
 
 cd ~

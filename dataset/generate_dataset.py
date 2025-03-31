@@ -11,6 +11,8 @@ import numpy as np
 from omegaconf import DictConfig
 from tqdm import tqdm
 
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from vlmaps.utils.habitat_utils import get_obj2cls_dict, make_cfg, save_obs
 
 
