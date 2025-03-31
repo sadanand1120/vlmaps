@@ -1,2 +1,2 @@
-habitat_scene_dir: "/Users/huang/hcg/projects/vln/data/mp3d"
-vlmaps_data_dir: "/Users/huang/hcg/projects/vln/data/vlmaps_dataset"
+habitat_scene_dir: "/robodata/smodak/r2r/mp3d_habitat/data"
+vlmaps_data_dir: "/robodata/smodak/r2r/vlmaps_dataset"

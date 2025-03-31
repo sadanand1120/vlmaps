@@ -5,10 +5,10 @@ notebook
 git+https://github.com/openai/CLIP.git
 torch-encoding==1.2.1
 # opencv-python==4.7.0.68
-opencv-python==4.1.2.30
+opencv-python
 imageio==2.23.0
 imageio-ffmpeg==0.4.7
-pytorch-lightning==1.8.1
+# pytorch-lightning==1.8.1
 altair==4.1.0
 timm==0.6.12
 tensorboardX==2.2
@@ -18,7 +18,7 @@ wandb==0.13.7
 h5py==3.7.0
 cmake
 # gym==0.22.0
-open3d==0.17.0
+open3d==0.16.0
 grad-cam==1.4.6
 networkx==2.8.8
 mpl_point_clicker==0.3.1
