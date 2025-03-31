@@ -1,6 +1,9 @@
 from pathlib import Path
 import hydra
 from omegaconf import DictConfig
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from vlmaps.map.vlmap import VLMap
 from vlmaps.utils.matterport3d_categories import mp3dcat
 from vlmaps.utils.visualize_utils import (
