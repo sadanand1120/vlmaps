@@ -27,6 +27,7 @@ from vlmaps.utils.visualize_utils import pool_3d_label_to_2d
 #     mp3dcat,
 #     segment_lseg_map,
 # )
+
 from vlmaps.map.vlmap_builder import VLMapBuilder
 from vlmaps.map.vlmap_builder_cam import VLMapBuilderCam
 from vlmaps.utils.mapping_utils import load_3d_map

@@ -125,7 +125,7 @@ class HabitatSpatialGoalNavigationTask(HabitatTask):
 def main(config: DictConfig) -> None:
     from vlmaps.dataloader.habitat_dataloader import VLMapsDataloaderHabitat
 
-    data_dir = Path(config.data_paths.vlmaps_data_dir) / "vlmaps_dataset"
+    data_dir = Path(config.data_paths.vlmaps_data_dir)
     data_dirs = sorted([x for x in data_dir.iterdir() if x.is_dir()])
 
     dataloader = VLMapsDataloaderHabitat(data_dirs[0], config.map_config)

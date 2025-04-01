@@ -151,7 +151,7 @@ class VLMapsDataloaderHabitat:
     config_name="test_config.yaml",
 )
 def main(config: DictConfig) -> None:
-    data_dir = Path(config.data_paths.vlmaps_data_dir) / "vlmaps_dataset"
+    data_dir = Path(config.data_paths.vlmaps_data_dir)
     data_dirs = sorted([x for x in data_dir.iterdir() if x.is_dir()])
     dataloader = VLMapsDataloaderHabitat(data_dirs[0], config.map_config)
     ids_list = np.random.randint(0, len(dataloader.base_poses), 10)

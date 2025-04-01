@@ -16,7 +16,7 @@ def main(config: DictConfig) -> None:
     os.environ["MAGNUM_LOG"] = "quiet"
     os.environ["HABITAT_SIM_LOG"] = "quiet"
     os.makedirs(config.data_paths.vlmaps_data_dir, exist_ok=True)
-    dataset_dir = Path(config.data_paths.vlmaps_data_dir) / "vlmaps_dataset"
+    dataset_dir = Path(config.data_paths.vlmaps_data_dir)
 
     scene_dirs = []
     for scene_name in config.scene_names:

@@ -42,7 +42,7 @@ class HabitatLanguageRobot(LangRobot):
         super().__init__(config)
 
         self.test_scene_dir = self.config["data_paths"]["habitat_scene_dir"]
-        data_dir = Path(self.config["data_paths"]["vlmaps_data_dir"]) / "vlmaps_dataset"
+        data_dir = Path(self.config["data_paths"]["vlmaps_data_dir"])
         self.vlmaps_data_save_dirs = [
             data_dir / x for x in sorted(os.listdir(data_dir)) if x != ".DS_Store"
         ]  # ignore artifact generated in MacOS
@@ -627,7 +627,7 @@ class HabitatLanguageRobot(LangRobot):
     config_name="test_config.yaml",
 )
 def main(config: DictConfig) -> None:
-    data_dir = Path(config.data_paths.vlmaps_data_dir) / "vlmaps_dataset"
+    data_dir = Path(config.data_paths.vlmaps_data_dir)
     robot = HabitatLanguageRobot(config)
     robot.setup_scene(config.scene_id)
     hab_tf = cvt_pose_vec2tf(robot.vlmaps_dataloader.base_poses[0])

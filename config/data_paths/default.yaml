@@ -1,2 +1,2 @@
-habitat_scene_dir: "/robodata/smodak/r2r/mp3d_habitat/data"
-vlmaps_data_dir: "/robodata/smodak/r2r/vlmaps_dataset"
+habitat_scene_dir: "/home/dynamo/AMRL_Research/dataset/mp3d/habitat/data"
+vlmaps_data_dir: "/home/dynamo/AMRL_Research/dataset/mp3d/vlmaps_dataset"
